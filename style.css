@@ -98,10 +98,10 @@ button {
 
 /* HOTSPOT POSITION
    These percentages are relative to background.jpg itself. */
-.hotspot-01 { left: 18%; top: 52%; }
-.hotspot-02 { left: 82%; top: 52%; }
-.hotspot-03 { left: 38%; top: 52%; }
-.hotspot-04 { left: 63%; top: 52%; }
+.hotspot-01 { left: 18%; top: 57%; }
+.hotspot-02 { left: 82%; top: 55%; }
+.hotspot-03 { left: 38%; top: 49%; }
+.hotspot-04 { left: 63%; top: 47%; }
 
 .video-screen {
   z-index: 2;
