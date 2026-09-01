@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quattro Video Quotidiani</title>
+    <title>Interactive Installation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <main class="experience" aria-label="声音、影像与空间互动装置">
+      <section class="home-screen" id="home-screen" aria-label="作品首页">
+        <div class="image-container">
+          <img src="background.jpg" alt="" class="background-image" />
+
+          <button class="hotspot hotspot-01" type="button" data-video="video01.MOV" aria-label="播放作品 01">01</button>
+          <button class="hotspot hotspot-02" type="button" data-video="video02.MOV" aria-label="播放作品 02">02</button>
+          <button class="hotspot hotspot-03" type="button" data-video="video03.MOV" aria-label="播放作品 03">03</button>
+          <button class="hotspot hotspot-04" type="button" data-video="video04.MOV" aria-label="播放作品 04">04</button>
+        </div>
+      </section>
+
+      <section class="video-screen" id="video-screen" aria-hidden="true">
+        <button class="back-button" type="button" aria-label="返回首页">×</button>
+        <video id="installation-video" controls playsinline preload="metadata"></video>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
